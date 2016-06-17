@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Shop | Independent project</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <ul class="nav nav-tabs pull-right">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="about.html">About the company</a></li>
+        </ul>
+        <h2 class="header">Blue Door Pizza Company</h2>
+      </header>
+      <h2>Blue Door Pizza is a locally owned company blah blah blah. We source our ingregients locally and from only the best available. Blah blah blah. Made is pride. Made to order. Blah blah blah.</h2>
+      <h3>Place your order:</h3>
+      <form id="size">
+        <div class="form-group">
+          <label for="Pizza size">Pizza size</label>
+          <select class="form-control" name="pizza size" id="pizza-size">
+            <option>Select a pizza size</option>
+            <option value="10">Small</option>
+            <option value="15">Medium</option>
+            <option value="20">Large</option>
+            <option value="25">Extra Large</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Crust">Crust</label>
+          <select class="form-control" name="pizza crust" id="pizza-crust">
+            <option>Select a pizza crust type</option>
+            <option value="1">Tomato</option>
+            <option value="3">Pesto</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Sauces">Sauce</label>
+          <select class="form-control" name="pizza sauce" id="pizza-sauce">
+            <option>Select a pizza sauce</option>
+            <option value="1">Tomato</option>
+            <option value="3">Pesto</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Cheese">Cheese</label>
+          <select class="form-control" name="cheese" id="cheese">
+            <option>Select type of cheese</option>
+            <option value="3">Fresh Mozzarella</option>
+            <option value="3">Ricotta</option>
+            <option value="3">Fontina</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Meat Toppings">Meat toppings</label>
+          <select class="form-control" name="meat" id="meat">
+            <option>Select toppings</option>
+            <option value="2">Olympia Provisions Capicola</option>
+            <option value="3">House cured Canadian bacon</option>
+            <option value="3">House made Sausage</option>
+            <option value="4">White Truffle Oil</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Vegetable Toppings">Vegetable toppings</label>
+          <select class="form-control" name="veggies" id="veggies">
+            <option>Select toppings</option>
+            <option value="1">Greek Black Olives</option>
+            <option value="1">Mushrooms</option>
+            <option value="1">Fresh Organic Arugala</option>
+            <option value="1">Roasted Organic Eggplant</option>
+            <option value="1">Fresh Organic Onions</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Place order</button>
+      </form>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="show-price">
+            <h2>Pizza</h2>
+            <p>Size: <span class="pizza-size"></span></p>
+            <p>Crust type: <span class="pizza-crust"></span></p>
+            <p>Sauce type: <span class="pizza-sauce"></span></p>
+            <p>Meats: <span class="pizza-meat"></span></p>
+            <p>Vegetables: <span class="pizza-veggies"></span></p>
+            <p>Cheese: <span class="pizza-veggies"></span></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3>Pizza price: <span class="pizza-price"></span></h3>
+          <ul id="price">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
