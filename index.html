@@ -19,16 +19,18 @@
       </header>
     </div>
     <div class="container" id="orderForm">
-      <p1>Blue Door Pizza is a locally owned company blah blah blah. We source our ingregients locally and from only the best available. Blah blah blah. Made is pride. Made to order. Blah blah blah.</p1>
+      <div class="jumbotron">
+        <h3>Blue Door Pizza is a locally owned company blah blah blah. We source our ingregients locally and from only the best available. Blah blah blah. Made with pride. Made to order. Blah blah blah.</h3>
+      </div>
       <h3>Place your order:</h3>
       <form>
         <div class="form-group">
           <label for="customerName">Customer Name:</label>
-          <input type="text" value="last, first" required class="customerName form-control">
+          <input type="text" value="name" class="customerName form-control">
         </div>
         <div class="form-group">
           <label for="customerPhone">Customer Phone Number:</label>
-          <input type="text" name="phoneNumber" value="(000)000-0000"required class="customerPhone form-control">
+          <input type="tel" title="Phone number" name="phoneNumber" value="phone number" class="customerPhone form-control">
         </div>
         <div class="form-group">
           <label for="numberPizzas"></label>
@@ -43,11 +45,11 @@
         <div class="form-group">
           <label for="pizzaSize">Pizza size</label>
           <select class="form-control" name="pizza size" id="pizza-size">
-            <option value="0">Select a size</option>
-            <option value="10">Small</option>
-            <option value="15">Medium</option>
-            <option value="20">Large</option>
-            <option value="25">Extra Large</option>
+            <option>Select a size</option>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Extra Large</option>
           </select>
         </div>
         <div class="form-group">
@@ -56,6 +58,7 @@
             <option value="0">Select a crust type</option>
             <option value="1">Tradional</option>
             <option value="3">Gluten Free</option>
+            <option value="5">Cornmeal</option>
           </select>
         </div>
         <div class="form-group">
@@ -70,9 +73,9 @@
           <label for="cheese">Cheese</label>
           <select class="form-control" name="cheese" id="cheese">
             <option value="0">Select a type of cheese</option>
-            <option value="3">Fresh Mozzarella</option>
+            <option value="5">Fresh Mozzarella</option>
             <option value="3">Ricotta</option>
-            <option value="3">Fontina</option>
+            <option value="1">Fontina</option>
           </select>
         </div>
         <div class="form-group">
@@ -116,7 +119,7 @@
       </div>
     </div>
     <div class="orderSubmitted">
-      <h2>Your order has been placed! Your order will be ready in 25 minutes.</h2>
+      <h2>Thank you for business! Your order has been placed! Your order will be ready in 25 minutes.</h2>
       <button type="submit" class="btn btn-success" id="newOrder">Place New Order</button>
     </div>
     </div>
