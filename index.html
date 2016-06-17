@@ -19,11 +19,31 @@
       </header>
       <h2>Blue Door Pizza is a locally owned company blah blah blah. We source our ingregients locally and from only the best available. Blah blah blah. Made is pride. Made to order. Blah blah blah.</h2>
       <h3>Place your order:</h3>
-      <form id="size">
+      <form id="customerInfo">
         <div class="form-group">
-          <label for="Pizza size">Pizza size</label>
+          <label for="customerName">Customer Name:</label>
+          <input type="text" value="first-name last-name" required class="customerName form-control">
+        </div>
+        <div class="form-group">
+          <label for="customerPhone">Customer Phone Number:</label>
+          <input type="text" name="phoneNumber" value="(000)000-0000"required class="form-control">
+        </div>
+<!-- Note to self:How do I enter a date/time stamp? -->
+      <form>
+        <div class="form-group">
+          <label for="numberPizzas"></label>
+          <select class="form-control" name="pizzaNumber" id="pizza-number">
+            <option value="0">Select Number of Pizzas</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="pizzaSize">Pizza size</label>
           <select class="form-control" name="pizza size" id="pizza-size">
-            <option>Select a pizza size</option>
+            <option value="0">Select a size</option>
             <option value="10">Small</option>
             <option value="15">Medium</option>
             <option value="20">Large</option>
@@ -31,50 +51,63 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="Crust">Crust</label>
+          <label for="crust">Crust</label>
           <select class="form-control" name="pizza crust" id="pizza-crust">
-            <option>Select a pizza crust type</option>
+            <option value="0">Select a crust type</option>
             <option value="1">Tomato</option>
             <option value="3">Pesto</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="Sauces">Sauce</label>
+          <label for="sauces">Sauce</label>
           <select class="form-control" name="pizza sauce" id="pizza-sauce">
-            <option>Select a pizza sauce</option>
+            <option value="0">Select a sauce</option>
             <option value="1">Tomato</option>
             <option value="3">Pesto</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="Cheese">Cheese</label>
+          <label for="cheese">Cheese</label>
           <select class="form-control" name="cheese" id="cheese">
-            <option>Select type of cheese</option>
+            <option value="0">Select a type of cheese</option>
             <option value="3">Fresh Mozzarella</option>
             <option value="3">Ricotta</option>
             <option value="3">Fontina</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="Meat Toppings">Meat toppings</label>
-          <select class="form-control" name="meat" id="meat">
-            <option>Select toppings</option>
-            <option value="2">Olympia Provisions Capicola</option>
+          <label for="meat">Meat toppings</label><br>
+            <input type="checkbox" id="meat-prosciutto" name="option1" value="1">Olympia Provisions Prosciutto<br>
+            <input type="checkbox" id="meat-bacon" name="option2" value="1">House-cured Canadian bacon<br>
+            <input type="checkbox" id="meat-sausage "name="option3" value="2">House-made Sausage<br>
+            <input type="checkbox" id="meat-chicken" name="option4" value="1">Free-range, hormone-free Chicken<br>
+            <input type="checkbox" id="meat-truffle" name="option4" value="2">white truffle oil<br>
+
+          <!-- <select class="form-control" name="meat" id="meat">
+            <option value="0">Select a topping</option>
+            <option value="2">Olympia Provisions Prosciutto</option>
             <option value="3">House cured Canadian bacon</option>
             <option value="3">House made Sausage</option>
+            <option value="3">Free-range, hormone-free Chicken</option>
             <option value="4">White Truffle Oil</option>
-          </select>
+          </select> -->
         </div>
         <div class="form-group">
-          <label for="Vegetable Toppings">Vegetable toppings</label>
-          <select class="form-control" name="veggies" id="veggies">
-            <option>Select toppings</option>
+          <label for="vegetables">Vegetable toppings</label><br>
+            <input type="checkbox" id="veg-olive" name="option1" value="1">Greek Black Olives<br>
+            <input type="checkbox" id="veg-mushroom" name="option2" value="1">Mushrooms<br>
+            <input type="checkbox" id="veg-arugala "name="option3" value="2">Fresh Organic Arugala<br>
+            <input type="checkbox" id="veg-eggplant" name="option4" value="2">Roasted Eggplant<br>
+            <input type="checkbox" id="veg-onions" name="option4" value="1">Camalized Onions<br>
+
+          <!-- <select class="form-control" name="veggies" id="veggies">
+            <option value="0">Select a topping</option>
             <option value="1">Greek Black Olives</option>
             <option value="1">Mushrooms</option>
             <option value="1">Fresh Organic Arugala</option>
             <option value="1">Roasted Organic Eggplant</option>
-            <option value="1">Fresh Organic Onions</option>
-          </select>
+            <option value="1">Carmalized Onions</option>
+          </select> -->
         </div>
         <button type="submit" class="btn">Place order</button>
       </form>
