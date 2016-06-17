@@ -4,3 +4,9 @@
 .row {
   padding: 50px;
 }
+.orderSummary {
+  display: none;
+}
+.orderSubmitted {
+  display: none;
+}

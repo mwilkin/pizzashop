@@ -17,19 +17,19 @@
         </ul>
         <h2 class="header">Blue Door Pizza Company</h2>
       </header>
-      <h2>Blue Door Pizza is a locally owned company blah blah blah. We source our ingregients locally and from only the best available. Blah blah blah. Made is pride. Made to order. Blah blah blah.</h2>
+    </div>
+    <div class="container" id="orderForm">
+      <p1>Blue Door Pizza is a locally owned company blah blah blah. We source our ingregients locally and from only the best available. Blah blah blah. Made is pride. Made to order. Blah blah blah.</p1>
       <h3>Place your order:</h3>
-      <form id="customerInfo">
+      <form>
         <div class="form-group">
           <label for="customerName">Customer Name:</label>
-          <input type="text" value="first-name last-name" required class="customerName form-control">
+          <input type="text" value="last, first" required class="customerName form-control">
         </div>
         <div class="form-group">
           <label for="customerPhone">Customer Phone Number:</label>
           <input type="text" name="phoneNumber" value="(000)000-0000"required class="form-control">
         </div>
-<!-- Note to self:How do I enter a date/time stamp? -->
-      <form>
         <div class="form-group">
           <label for="numberPizzas"></label>
           <select class="form-control" name="pizzaNumber" id="pizza-number">
@@ -109,10 +109,10 @@
             <option value="1">Carmalized Onions</option>
           </select> -->
         </div>
-        <button type="submit" class="btn">Place order</button>
+        <button type="submit" class="btn btn-primary" id="reviewOrder">Review order</button>
       </form>
     </div>
-    <div class="container">
+    <div class="orderSummary">
       <div class="row">
         <div class="col-md-6">
           <div id="show-price">
@@ -126,12 +126,18 @@
           </div>
         </div>
         <div class="col-md-6">
-          <h3>Pizza price: <span class="pizza-price"></span></h3>
+          <h2>Pizza price: <span class="pizza-price"></span></h3>
           <ul id="price">
 
           </ul>
         </div>
+        <button type="submit" class="btn btn-success" id="placeOrder">Place Order</button>
       </div>
+    </div>
+    <div class="orderSubmitted">
+      <h2>Your order has been placed! Your order will be ready in 25 minutes.</h2>
+      <button type="submit" class="btn btn-success" id="newOrder">Place New Order</button>
+    </div>
     </div>
   </body>
 </html>
